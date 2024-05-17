@@ -1,0 +1,224 @@
+/* general styles (start) */
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:antiquewhite;
+}
+
+::selection {
+    color: rgb(98, 197, 156);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li:nth-child(4) {
+    width: 50%;
+}
+
+nav a {
+    font-weight: bold;
+    color: rgb(98, 197, 156);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav li:last-child a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(98, 197, 156);
+    transition: 0.5s;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: rgb(98, 197, 156);
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: calc(100% - 40px);
+}
+
+/* general styles (end) */
+
+/* buttons styles (start) */
+
+.buttons a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: rgb(98, 197, 156);
+    box-shadow: none;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.buttons a:hover {
+    transform: scale(1.05);
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.collections .buttons a {
+    background-color: rgb(255, 255, 255);
+    color: rgb(98, 197, 156);
+}
+
+/* general styles (end) */
+
+.about main a {
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.about main a:hover,
+.about main li {
+    color: rgb(98, 197, 156);
+}
+
+.about h3 {
+    display: inline;
+}
+
+/* collections style (start) */
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 1px solid black;
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.gallery img:hover {
+    transform: scale(1.05)
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* collections style (end) */
+
+/* login styles (start) */
+
+.login main {
+    display: flex;
+    justify-content: center;
+}
+
+.login .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.login h2 {
+    text-align: center;
+}
+
+.login form {
+    padding: 0px 10px 30px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login .signup {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+}
+
+.login button {
+    background-color: rgb(98, 197, 156);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px;
+}
+
+.login span {
+    padding: 15px 0px 5px 0px;
+}
+
+.login input {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: rgb(98, 197, 156);
+    background-color: antiquewhite;
+    border: none;
+}
+
+.login form button {
+    margin-top: 15px;
+}
+
+.login .signup button {
+    color: antiquewhite;
+    font-size: medium;
+}
+
+.login nav a {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.login {
+    margin-top: 20px;
+}
+
+.login nav {
+    margin-bottom: 20px;
+}
+
+/* login styles (end) */
