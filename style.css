@@ -173,7 +173,13 @@ footer {
     padding: 20px 10px;
 }
 
-.login button {
+.login .create a {
+    transition: 0.5s;
+}
+
+.login button, .signup a, .create a {
+    text-align: center;
+    text-decoration: none;
     background-color: rgb(98, 197, 156);
     border-radius: 5px;
     color: white;
@@ -203,7 +209,7 @@ footer {
     transition: 0.5s;
 }
 
-.login .signup button {
+.login .signup a {
     color: rgb(250, 244, 215);
     font-size: medium;
     transition: 0.5s;
@@ -215,11 +221,11 @@ footer {
     background-color: white;
 }
 
-.login form button:hover {
+.login form a:hover {
     color: black;
 }
 
-.login .signup button:hover {
+.login .signup a:hover {
     color: white;
 }
 
