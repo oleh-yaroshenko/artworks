@@ -39,6 +39,10 @@ nav li:last-child a {
     border-radius: 10px;
 }
 
+nav li:last-child a:hover {
+    color: black;
+}
+
 nav a:hover {
     color: black;
 }
@@ -190,6 +194,10 @@ footer {
     padding: 5px;
 }
 
+.login button:hover, .signup a:hover {
+    color: black;
+}
+
 .login span {
     padding: 15px 0px 5px 0px;
 }
@@ -226,7 +234,7 @@ footer {
 }
 
 .login .signup a:hover {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .login {
