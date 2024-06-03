@@ -2,7 +2,7 @@
 
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color:rgb(250, 244, 215);
+    background-color: rgb(250, 244, 215);
 }
 
 ::selection {
@@ -51,7 +51,6 @@ nav img {
     width: 40px;
     height: 40px;
     border-radius: 5px;
-
 }
 
 main {
@@ -133,6 +132,10 @@ footer {
     max-width: calc(50% - 10px);
     margin: 5px;
     box-sizing: border-box;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
 }
 
 .gallery img:hover {
@@ -181,7 +184,9 @@ footer {
     transition: 0.5s;
 }
 
-.login button, .signup a, .create a {
+.login button,
+.signup a,
+.create a {
     text-align: center;
     text-decoration: none;
     background-color: rgb(98, 197, 156);
@@ -194,7 +199,8 @@ footer {
     padding: 5px;
 }
 
-.login button:hover, .signup a:hover {
+.login button:hover,
+.signup a:hover {
     color: black;
 }
 
@@ -208,7 +214,7 @@ footer {
     border-radius: 5px;
     margin-bottom: 10px;
     color: rgb(98, 197, 156);
-    background-color:rgb(250, 244, 215);
+    background-color: rgb(250, 244, 215);
     border: none;
 }
 
