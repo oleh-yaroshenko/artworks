@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    flex-shrink: 0;
+    font-weight: normal;
+    font-size: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    color: initial;
+    font-family: inherit;
+    list-style: none;
+    vertical-align: baseline;
+    background: none;
+}
+
+$white: #ffffff;
+$black: #000000;
+$turquoise: #62c59c;
+$beige: #faf4d7;
+$black40: #00000066;
+
+%title {
+    font-size: 72px;
+    font-weight: 700;
+    color: $white;
+
+    @media screen and (max-width: 768px) {
+        & {
+            font-size: 60px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        & {
+            font-size: 48px;
+        }
+    }
+}
+
+%descr {
+    width: 70%;
+    font-size: 24px;
+    text-align: center;
+    padding: 0 1rem;
+
+    @media screen and (max-width: 768px) {
+        & {
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        & {
+            width: 100%;
+        }
+    }
+}
+
+%hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: $turquoise;
+    border-radius: .5rem;
+    padding: 3rem 0;
+    row-gap: 1rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Crimson Text", serif;
+    background: $beige;
+
+    @media screen and (max-width: 320px) {
+        & {
+            overflow: hidden;
+        }
+    }
+}
+
+main {
+    flex-grow: 1;
+    padding: 1rem 3rem;
+
+    @media screen and (max-width: 768px) {
+        & {
+            padding: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        & {
+            padding: .5rem;
+        }
+    }
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+
+    @media screen and (max-width: 768px) {
+        & {
+            padding: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        & {
+            padding: .5rem;
+        }
+    }
+
+    &-title {
+        font-size: 42px;
+        font-weight: 600;
+        padding-bottom: .5rem;
+    }
+
+    &-nav {
+        display: flex;
+        padding: .5rem 1rem;
+        column-gap: 2rem;
+        border: 1px solid $black40;
+        border-radius: .5rem;
+
+        &-a {
+            font-size: 18px;
+            transition: .3s;
+            color: $turquoise;
+            font-weight: 600;
+
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+}
+
+.home {
+    &-hero {
+        @extend %hero;
+
+        &-title {
+            @extend %title;
+        }
+
+        &-descr {
+            @extend %descr;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 3rem;
+    padding: 0 1rem;
+    border-radius: .5rem .5rem 0 0;
+    background: $turquoise;
+
+    @media screen and (max-width: 768px) {
+        & {
+            margin: 0 1rem;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        & {
+            margin: 0 .5rem;
+        }
+    }
+
+    &-logo {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    &-copyright {
+        font-size: 18px;
+        font-weight: 600;
+        color: $white;
+
+        @media screen and (max-width: 480px) {
+            & {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.gallery {
+    &-hero {
+        @extend %hero;
+
+        &-title {
+            @extend %title;
+        }
+
+        &-descr {
+            @extend %descr;
+        }
+    }
+
+    &-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: .5rem;
+        padding: 1rem 0 0;
+        perspective: 1000px;
+
+        @media screen and (max-width: 768px) {
+            & {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            & {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        &-img {
+            width: 100%;
+            border-radius: .5rem;
+            border: 1px solid $black40;
+            transition: .1s;
+            cursor: pointer;
+        }
+    }
+}
+
+.about {
+    &-hero {
+        @extend %hero;
+
+        &-title {
+            @extend %title;
+        }
+
+        &-descr {
+            @extend %descr;
+        }
+    }
+
+    &-contact {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem 0;
+        gap: .5rem;
+
+        &-a {
+            font-size: 20px;
+            font-weight: 600;
+            background: $turquoise;
+            padding: .5rem 1.25rem;
+            border-radius: 2rem;
+            transition: .3s;
+            flex: 1 1 auto;
+            text-align: center;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}
